@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Varela Round";
+}
+
+body {
+  color: #2d3339;
+  text-align: center;
+  background: #edeff0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.standing-board {
+  background: #fff;
+  width: 700px;
+  margin: 70px auto;
+  box-shadow: 0 2px 0 #5583ad;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+header {
+  color: #fff;
+  padding: 30px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #14aacf;
+  border-bottom: solid 2px #d4caff;
+}
+
+header h1 {
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+header .stats {
+  /* border: 1px solid palegoldenrod; */
+  text-align: right;
+  /* min-width: 20%; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-header {
+  background-color: #869cb1;
+  color: #fff;
+}
+
+.drivers-header {
+  display: flex;
+  line-height: 2.5em;
+  border-bottom: solid 2px #eeeeee;
+}
+
+.drivers-header .driver-info {
+  width: 80%;
+  /* border: 1px solid #5583ad; */
+  display: grid;
+  grid-template-columns: 45% 20% 35%;
+  align-items: center;
+}
+
+.drivers-header .points {
+  /* border: 1px solid orangered; */
+  width: 20%;
+}
+
+.list .driver-info p:first-child {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.drivers {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  border-bottom: solid 2px #eeeeee;
+  letter-spacing: 1.5px;
+  color: #5583ad;
+}
+
+.remove-driver {
+  font-size: 1.15em;
+  border: none;
+  outline: none;
+  /* visibility: hidden; */
+  color: #c73c3a;
+  cursor: pointer;
+  margin: 0 10px 0 0;
+  padding: 0;
+  background: none;
+}
+
+/* .driver-name {
+    line-height: 3rem;
+    padding-left: 10px;
+  } */
+
+/* .driver-name {
+    width: 75%;
+    text-align: left;
+    padding-left: 30px;
+  } */
+
+.driver-name span {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+/* ==========================   Counter part ============================ */
+
+.counter {
+  width: 20%;
+  display: flex;
+  /* align-items: center; */
+  /* text-align: right;
+    padding-right: 50px; */
+}
+
+.counter-action {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.15em;
+  font-weight: bold;
+  color: #b0aeba;
+  background-color: #dcdcdc;
+  display: block;
+  padding: 10px 15px;
+}
+
+.counter-action:hover {
+  color: #fff;
+}
+
+.increment:hover {
+  background: #83d97c;
+}
+
+.decrement:hover {
+  background: #ef5350;
+}
+
+.counter-score {
+  flex-grow: 1;
+  align-self: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.6em;
+  line-height: 2em;
+}
